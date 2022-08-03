@@ -1,0 +1,12 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: lightblue;
+}
+
+h1 {
+    color:#002D62
+}
+
+.navMenu a:hover {
+    color: #fddb3a;
+  }
