@@ -5,14 +5,15 @@
         <link href="style.css" rel="stylesheet">
     </head>
     <body>
-        <nav class="navMenu">
-            <ul>
-                <li><a href="#About Me">About Me</a></li>
-                <li><a href="#Games & Projects">Games & Projects</a></li>
-                <li><a href="#Contact Me">Contact Me</a></li>
-                <div class="dot"></div>
-            </ul>
-        </nav>
+        <header>
+            <nav class="navMenu">
+                <ul>
+                    <li><a href="#About Me">About Me</a></li>
+                    <li><a href="#Games & Projects">Games & Projects</a></li>
+                    <li><a href="#Contact Me">Contact Me</a></li>
+                </ul>
+            </nav>
+        </header>
         <figure>
             <img src="https://lh3.googleusercontent.com/CYHqwfAPLuWZp9ZRc8FZxqbi0ImktkOkDdVou7h5oyd7oef08j8XGr5lvP8rDE5LZ6LDYSdfPYsjFn2UvHAjKTJTcUxeNkDaNB2272oUbaL2E0ReTfsb83Ac60Xh1dJQQfGShoGIPg=w2400"
                 width="146.25"
@@ -67,6 +68,14 @@
                 <p><b>Email:</b> <a href="mailto:ncwall13@gmail.com">ncwall13@gmail.com</a></p>
                 <p><b>LinkedIn:</b> <a href="https://www.linkedin.com/in/noah-wall/" target="_blank">Click Here!</a></p>
                 <p><b>GitHub:</b> <a href="https://github.com/ncwall01" target="_blank">Click Here!</a></p>
+
+
+                <form action="mail.php" method="POST">
+                    <p>Name</p> <input type="text" name="name">
+                    <p>Email</p> <input type="text" name="email">
+                    <p>Message</p><textarea name="message" rows="6" cols="25"></textarea><br />
+                    <input type="submit" value="Send"><input type="reset" value="Clear">
+                    </form>
             </section>
         </main>
     
