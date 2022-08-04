@@ -1,7 +1,4 @@
-body {
-    font-family: 'Courier New', Courier, monospace;
-    background-color: lightblue;
-}
+@import url('https://fonts.googleapis.com/css2?family=Tomorrow:wght@300&display=swap');
 
 h1 {
     color:#002D62
@@ -10,3 +7,61 @@ h1 {
 .navMenu a:hover {
     color: #fddb3a;
   }
+
+  .navLink a:hover {
+    color: #fddb3a;
+  }
+
+* {
+    font-family: 'Tomorrow', sans-serif;
+    background-color: lightblue;
+  }
+
+.navMenu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+header {
+  background-color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 0 25px 0 grey;
+}
+
+body {
+  height: 125vh;
+  background-size: cover;
+  margin-top: 80px;
+  padding: 10px;
+}
+
+header * {
+  display: inline;
+  background-color: white;
+}
+
+header li {
+  margin: 20px;
+  font-size: 25px;
+}
+
+header li a {
+  color: #002D62;
+  text-decoration: none;
+}
+
+header img {
+  height: 80px;
+}
+
+section li a {
+  text-decoration: none;
+  color: black;
+}
