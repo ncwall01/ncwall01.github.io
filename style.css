@@ -59,9 +59,32 @@ header li a {
 
 header img {
   height: 80px;
+  float: left;
+  margin: 0 0 0 25px;
 }
 
 section li a {
   text-decoration: none;
   color: black;
+}
+
+.contactME ul {
+  list-style-type: none;
+  padding: 0;
+  position: relative;
+}
+
+.wrapper {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background-color: #002D62;
+  display: grid;
+  place-items: center;
+  transition: opacity .25s, visibility 1s;
+}
+
+.fade {
+  opacity: 0;
+  visibility: hidden;
 }
