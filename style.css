@@ -12,6 +12,15 @@ h1 {
     color: #fddb3a;
   }
 
+  .gridItem a:hover {
+    color: #fddb3a;
+  }
+
+  .gridItem a {
+    text-decoration: none;
+    color: black;
+  }
+
 * {
     font-family: 'Tomorrow', sans-serif;
     background-color: lightblue;
@@ -74,17 +83,108 @@ section li a {
   position: relative;
 }
 
-.wrapper {
-  position: fixed;
-  inset: 0;
-  z-index: 9999;
-  background-color: #002D62;
-  display: grid;
-  place-items: center;
-  transition: opacity .25s, visibility 1s;
+.About ul {
+  display: flex;
+  flex-flow: wrap column;
+  max-height: 150px;
+  width: 1000px;
 }
 
-.fade {
-  opacity: 0;
+#arrow {
+  border-right:2px solid black;
+  border-bottom:2px solid black;
+  width:10px;
+  height:10px;
+  transform: rotate(-45deg);
+  margin-top:40px;
+}
+
+.About ul li {
+  padding-bottom: 10px;
+  list-style:none;
+}
+
+.About ul li:before {
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  width: 10px;
+  height: 10px;
+  transform: rotate(-45deg);
+  content: "";
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.gridCon {
+  display: grid;
+  column-gap: 60px;
+  grid-template-columns: 225px 225px 225px;
+  padding: 10px;
+}
+
+.gridItem {
+  border: 1px solid;
+  padding: 15px;
+  text-align: center;
+  justify-content: center;
+  border-radius: 25px;
+}
+
+/*Greeting Animation*/
+.notif {
+  position: relative;
+  display: inline-block;
+  left: 40%;
+  font-size: 17px;
+  max-width: 250px;
+  padding: 20px 15px;
+  border-radius: 10px;
+  background-color: white;
+  color: #002D62;
+  box-shadow: 0 1px 10px gray;
+  transform: translateY(30px);
+  opacity: 1;
   visibility: hidden;
+  animation: fade 4s linear forwards;
+}
+
+.progress {
+  position: absolute;
+  left: 1025px;
+  left: 5px;
+  bottom: 5px;
+  width: 0;
+  height: 3px;
+  background-image: linear-gradient(to right, #529bdb, #3250bf);
+  border-radius: 4px;
+  animation: progress 3s .25s linear forwards;
+}
+
+@keyframes fade {
+  5% {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
+  }
+  90% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  95% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+}
+
+@keyframes progress {
+  to {
+    width: calc(100% -10px);
+  }
+}
+
+html {
+  scroll-behavior: smooth;
 }
