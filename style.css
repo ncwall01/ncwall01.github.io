@@ -132,9 +132,9 @@ section li a {
 
 /*Greeting Animation*/
 .notif {
-  position: relative;
+  position: fixed;
   display: inline-block;
-  left: 40%;
+  left: 90vw;
   font-size: 17px;
   max-width: 250px;
   padding: 20px 15px;
@@ -146,18 +146,6 @@ section li a {
   opacity: 1;
   visibility: hidden;
   animation: fade 4s linear forwards;
-}
-
-.progress {
-  position: absolute;
-  left: 1025px;
-  left: 5px;
-  bottom: 5px;
-  width: 0;
-  height: 3px;
-  background-image: linear-gradient(to right, #529bdb, #3250bf);
-  border-radius: 4px;
-  animation: progress 3s .25s linear forwards;
 }
 
 @keyframes fade {
