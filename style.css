@@ -12,10 +12,6 @@ h1 {
     color: #fddb3a;
   }
 
-  .gridItem a:hover {
-    color: #fddb3a;
-  }
-
   .gridItem a {
     text-decoration: none;
     color: black;
@@ -23,7 +19,7 @@ h1 {
 
 * {
     font-family: 'Tomorrow', sans-serif;
-    background-color: lightblue;
+    background-color:  #add8e6;
   }
 
 .navMenu {
@@ -38,7 +34,7 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  height: 80px;
+  height: 111px;
   display: flex;
   align-items: center;
   box-shadow: 0 0 25px 0 grey;
@@ -47,7 +43,7 @@ header {
 body {
   height: 125vh;
   background-size: cover;
-  margin-top: 80px;
+  margin-top: 111px;
   padding: 10px;
 }
 
@@ -70,6 +66,10 @@ header img {
   height: 80px;
   float: left;
   margin: 0 0 0 25px;
+  animation-name: spin;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 
 section li a {
@@ -128,6 +128,12 @@ section li a {
   text-align: center;
   justify-content: center;
   border-radius: 25px;
+  border: solid 4px black;
+  transition: box-shadow 0.15s;
+}
+
+.gridItem:hover {
+  box-shadow: 15px 5px 2px grey;
 }
 
 /*Greeting Animation*/
@@ -175,4 +181,21 @@ section li a {
 
 html {
   scroll-behavior: smooth;
+}
+
+@keyframes spin {
+  from {
+      transform:rotate(0deg);
+  }
+  to {
+      transform:rotate(360deg);
+  }
+}
+
+footer {
+  margin-bottom: 30px;
+}
+
+.AB {
+  line-height: 2;
 }
