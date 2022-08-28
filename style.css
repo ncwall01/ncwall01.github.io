@@ -83,6 +83,11 @@ section li a {
   position: relative;
 }
 
+.contactME img {
+  position: relative;
+  top: 18px;
+}
+
 .About ul {
   display: flex;
   flex-flow: wrap column;
@@ -120,6 +125,7 @@ section li a {
   column-gap: 60px;
   grid-template-columns: 225px 225px 225px;
   padding: 10px;
+  
 }
 
 .gridItem {
@@ -130,6 +136,16 @@ section li a {
   border-radius: 25px;
   border: solid 4px black;
   transition: box-shadow 0.15s;
+  color: whitesmoke;
+  background-color: whitesmoke;
+}
+
+.gridItem a {
+  background-color: whitesmoke;
+}
+
+.gridItem img {
+  background-color: whitesmoke;
 }
 
 .gridItem:hover {
